@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!-- Container -->
     <div class="container" style="background-color: yellow">
       <h1>Container</h1>
 
@@ -29,6 +30,7 @@
       </p>
     </div>
 
+    <!-- Fluid container -->
     <div class="container-fluid" style="background-color: green">
       <h1>Fluid Container</h1>
 
@@ -48,6 +50,47 @@
         container-fluid, the below div will take-up complete width of the
         viewport and will expand or contract whenever the viewport is resized.
       </p>
+    </div>
+
+    <!-- Nested containers -->
+    <div class="container" style="background-color: orange">
+      <h1>Top-level container</h1>
+      <p>Paragraph-1</p>
+
+      <div class="container" style="background-color: rgb(109, 177, 219)">
+        <h1>Second-level container</h1>
+        <p>Paragraph-2</p>
+
+        <div class="container" style="background-color: rgb(137, 219, 109)">
+          <h1>Third-level container</h1>
+          <p>Paragraph-3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container" style="background-color: grey">
+      <div class="row">
+        <div class="col-4" style="background-color: pink">Column-1</div>
+        <div class="col-4" style="background-color: greenyellow">Column-2</div>
+        <div class="col-4" style="background-color: blue">Column-3</div>
+      </div>
+
+      <div class="row">
+        <div class="col" style="background-color: white">Column-4</div>
+        <div class="col" style="background-color: black">Column-5</div>
+        <div class="col" style="background-color: yellow">Column-6</div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-lg-4" style="background-color: violet">
+          Column-1
+        </div>
+        <div class="col-sm-4 col-lg-8" style="background-color: green">
+          Column-2
+        </div>
+      </div>
     </div>
 
     <script

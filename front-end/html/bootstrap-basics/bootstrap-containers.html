@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Container -->
-    <div class="container" style="background-color: yellow">
+    <div class="container my-5" style="background-color: yellow">
       <h1>Container</h1>
 
       <h6>The .container class provides a responsive fixed width container.</h6>
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Fluid container -->
-    <div class="container-fluid" style="background-color: green">
+    <div class="container-fluid my-5" style="background-color: green">
       <h1>Fluid Container</h1>
 
       <h6>
@@ -53,11 +53,14 @@
     </div>
 
     <!-- Nested containers -->
-    <div class="container" style="background-color: orange">
+    <div class="container text-center my-5" style="background-color: orange">
       <h1>Top-level container</h1>
       <p>Paragraph-1</p>
 
-      <div class="container" style="background-color: rgb(109, 177, 219)">
+      <div
+        class="container text-left"
+        style="background-color: rgb(109, 177, 219)"
+      >
         <h1>Second-level container</h1>
         <p>Paragraph-2</p>
 
@@ -69,27 +72,66 @@
     </div>
 
     <!-- Container with rows and columns -->
-    <div class="container mb-3" style="background-color: grey">
+    <div class="container my-5 text-center" style="background-color: beige">
+      <h1>Container with Rows and Columns</h1>
       <div class="row">
-        <div class="col-4" style="background-color: pink">Column-1</div>
-        <div class="col-4" style="background-color: greenyellow">Column-2</div>
-        <div class="col-4" style="background-color: blue">Column-3</div>
+        <div class="col-4" style="background-color: pink">Div-1</div>
+        <div class="col-4" style="background-color: greenyellow">Div-2</div>
+        <div class="col-4" style="background-color: blue">Div-3</div>
       </div>
       <div class="row">
-        <div class="col" style="background-color: red">Column-4</div>
-        <div class="col" style="background-color: black">Column-5</div>
-        <div class="col" style="background-color: grey">Column-6</div>
+        <div class="col" style="background-color: red">Div-4</div>
+        <div class="col" style="background-color: black">Div-5</div>
+        <div class="col" style="background-color: gold">Div-6</div>
+      </div>
+      <div class="row">
+        <div class="col-4" style="background-color: aqua">Div-7</div>
+        <div class="col-8" style="background-color: orange">Div-8</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: brown">Div-9</div>
+        <div class="col" style="background-color: purple">Div-10</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: green">Div-11</div>
+      </div>
+      <div class="row">
+        <div class="col-4" style="background-color: goldenrod">Div-12</div>
+        <div class="offset-4 col-4" style="background-color: lightblue">
+          Div-13
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-3 col-3" style="background-color: cyan">Div-14</div>
+        <div class="offset-3 col-3" style="background-color: magenta">
+          Div-15
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-4 col-4 border border-dark bg-primary">Div-16</div>
       </div>
     </div>
 
-    <!-- Container with responsive columns for mobile and desktop -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-lg-4" style="background-color: navy">
-          Column-1
+    <!-- Containers with responsive columns for mobile and desktop -->
+    <div class="container my-5">
+      <h1>Responsive Container</h1>
+      <div class="row border border-danger bg-warning text-center">
+        <div
+          class="col-8 col-sm-4 col-md-10 col-lg-6 col-xl-2 border border-dark bg-info"
+        >
+          Div-1
         </div>
-        <div class="col-sm-4 col-lg-8" style="background-color: yellow">
-          Column-2
+      </div>
+    </div>
+
+    <!-- Containers with responsive columns for mobile and desktop -->
+    <div class="container my-5">
+      <h1>Responsive Container with Centered Content</h1>
+      <div class="row border border-danger bg-warning text-center">
+        <div
+          class="offset-2 col-8 offset-sm-4 col-sm-4 offset-md-1 col-md-10 offset-lg-3 col-lg-6 offset-xl-5 col-xl-2 border border-dark bg-info"
+        >
+          Div-1
         </div>
       </div>
     </div>

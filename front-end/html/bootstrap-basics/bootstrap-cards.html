@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-2">Bootstrap Cards</h1>
+
+      <h6>
+        A Bootstrap card is a flexible box containing some padding around the
+        content. It includes the options for headers and footers, color,
+        content, and powerful display options. It replaces the use of panels,
+        wells, and thumbnails. It can be used in a single container called card.
+      </h6>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Basic Card</h1>
+
+        <div class="card">
+          <div class="card-header">Card Header</div>
+          <div class="card-body">Card Body</div>
+          <div class="card-footer">Card Footer</div>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Card with Title and Link</h1>
+
+        <div class="card">
+          <div class="card-title">Card Title</div>
+          <p class="card-text">Card Text</p>
+          <a href="#" class="card-link">Click Here!</a>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Colored Card</h1>
+
+        <div class="card text-white bg-primary">
+          <div class="card-header">Card Header</div>
+          <div class="card-body">Card Body</div>
+          <div class="card-footer">Card Footer</div>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Card with Images</h1>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+            alt="card image"
+            class="card-img-top"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Author Name</h5>
+            <p class="card-text">Passionate about programming.</p>
+            <a href="#" class="btn btn-primary" role="button">See Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Multiple Cards in a Row</h1>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                alt="card image"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Author Name</h5>
+                <p class="card-text">Passionate about programming.</p>
+                <a href="#" class="btn btn-primary" role="button"
+                  >See Profile</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                alt="card image"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Author Name</h5>
+                <p class="card-text">Passionate about programming.</p>
+                <a href="#" class="btn btn-primary" role="button"
+                  >See Profile</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                alt="card image"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Author Name</h5>
+                <p class="card-text">Passionate about programming.</p>
+                <a href="#" class="btn btn-primary" role="button"
+                  >See Profile</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                alt="card image"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Author Name</h5>
+                <p class="card-text">Passionate about programming.</p>
+                <a href="#" class="btn btn-primary" role="button"
+                  >See Profile</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Card Deck</h1>
+        <div class="card-deck">
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Card Group</h1>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+              alt="card image"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Author Name</h5>
+              <p class="card-text">Passionate about programming.</p>
+              <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

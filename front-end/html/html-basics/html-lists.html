@@ -1,65 +1,125 @@
-<title>Lists</title>
-<body>
-  <div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lists Demo</title>
+  </head>
+
+  <body>
     <h1>HTML Lists</h1>
 
-    <!-- Unordered Lists -->
-    <div name="unorderedLists">
-      <h2>Unordered Lists</h2>
+    <h2>Unordered Lists</h2>
+    Unordered List
+    <ul>
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ul>
 
-      <ul name="defaultUnorderedList">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ul>
+    Unordered List with Square Bulleting
+    <ul style="list-style-type: square">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ul>
 
-      <ul name="nestedUnorderedLists">
-        <li>Item #1</li>
-        <li>Item #2</li>
-        <li>
-          Item #3
-          <ul name="innerList">
-            <li>Subitem #1</li>
-            <li>Subitem #2</li>
-          </ul>
-        </li>
-        <li>Item #4</li>
-      </ul>
-    </div>
+    Unordered List with Disc Bulleting
+    <ul style="list-style-type: disc">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ul>
 
-    <!-- Ordered Lists -->
-    <div name="orderedLists">
-      <h2>Ordered Lists</h2>
+    Unordered List with Circle Bulleting
+    <ul style="list-style-type: circle">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ul>
 
-      <ol name="defaultOrderedList">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ol>
+    <h2>Ordered Lists</h2>
+    Ordered List
+    <ol>
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ol>
 
-      <ol type="I">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ol>
+    Ordered List with Alphabetical Enumeration
+    <ol type="A">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ol>
 
-      <ol type="i">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ol>
+    Ordered List with alphabetical Enumeration
+    <ol type="a">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ol>
 
-      <ol type="A">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ol>
+    Ordered List with Roman Numerals
+    <ol type="I">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ol>
 
-      <ol type="a">
-        <li>List Item #1</li>
-        <li>List Item #2</li>
-        <li>List Item #3</li>
-      </ol>
-    </div>
-  </div>
-</body>
+    Ordered List with roman numerals
+    <ol type="i">
+      <li>List Item-1</li>
+      <li>List Item-2</li>
+      <li>...</li>
+    </ol>
+
+    <h2>Nested Lists</h2>
+    Nested Unordered Lists
+    <ul>
+      <li>List Item-1</li>
+      <li>
+        List Item-2
+        <ul>
+          <li>Sublist Item-1</li>
+          <li>Sublist Item-2</li>
+        </ul>
+      </li>
+      <li>List Item-3</li>
+    </ul>
+
+    Nested Ordered Lists
+    <ol>
+      <li>List Item-1</li>
+      <li>
+        List Item-2
+        <ol type="i">
+          <li>Sublist Item-1</li>
+          <li>Sublist Item-2</li>
+        </ol>
+      </li>
+      <li>List Item-3</li>
+    </ol>
+
+    Nested Mixed Lists
+    <ol>
+      <li>List Item-1</li>
+      <li>
+        List Item-2
+        <ul>
+          <li>Sublist Item-1</li>
+          <li>Sublist Item-2</li>
+        </ul>
+      </li>
+      <li>
+        List Item-3
+        <ol type="i">
+          <li>Sublist Item-1</li>
+          <li>Sublist Item-2</li>
+        </ol>
+      </li>
+      <li>List Item-4</li>
+    </ol>
+  </body>
+</html>

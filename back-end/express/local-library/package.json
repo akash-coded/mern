@@ -11,6 +11,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "mongoose": "^6.3.8",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
   },

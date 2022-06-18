@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flexbox Demo</title>
     <style>
-      .flex-container > div {
-        background-color: burlywood;
-        width: 100px;
-        margin: 10px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-      }
-
       .flex-container {
         background-color: aqua;
         margin: 20px;
@@ -26,13 +17,26 @@
         /* flex-direction: row; */
         /* flex-direction: row-reverse; */
       }
+
+      .flex-container > div {
+        background-color: burlywood;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
     </style>
   </head>
 
   <body>
+    <!-- flex container -->
     <div class="flex-container" id="basicDemo">
+      <!-- flex item-1 -->
       <div>1</div>
+      <!-- flex item-2 -->
       <div>2</div>
+      <!-- flex item-3 -->
       <div>3</div>
     </div>
 

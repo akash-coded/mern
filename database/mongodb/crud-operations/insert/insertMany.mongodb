@@ -1,0 +1,49 @@
+// Inseting multiple documents without the _id fields
+db.books.insertMany([
+  { title: "NoSQL Distilled", isbn: "0-4696-7030-4" },
+  { title: "NoSQL in 7 Days", isbn: "0-4086-6859-8" },
+  { title: "NoSQL Database", isbn: "0-2504-6932-4" },
+]);
+
+// Inseting multiple documents with the _id fields
+db.books.insertMany([
+  { _id: 3, title: "SQL Basics", isbn: "0-7925-6962-8" },
+  { _id: 4, title: "SQL Advanced", isbn: "0-1184-7778-1" },
+]);
+
+// Attempting to insert documents whose _id values already exist
+db.books.insertMany([
+  { _id: 3, title: "SQL Performance Tuning", isbn: "0-6799-2974-6" },
+  { _id: 4, title: "SQL Index", isbn: "0-5097-1723-3" },
+]);
+
+// Performing an unordered insert
+db.books.insertMany(
+  [
+    { _id: 5, title: "SQL Performance Tuning", isbn: "0-6799-2974-6" },
+    { _id: 5, title: "SQL Trees", isbn: "0-6998-1556-8" },
+    { _id: 6, title: "SQL Graph", isbn: "0-6426-4996-0" },
+    { _id: 7, title: "NoSQL Pros", isbn: "0-9602-9886-X" },
+  ],
+  { ordered: false }
+);
+
+db.posts.insertMany([
+  {
+    _id: 1,
+    title: "Bagels are not croissants.",
+    comments: [
+      { comment: "0. true", description: "Test" },
+      { comment: "1. croissants aren't bagels.", description: "Speculative" },
+    ],
+  },
+  {
+    _id: 2,
+    title: "Coffee please.",
+    comments: [
+      { comment: "2. iced coffee", description: "Cold" },
+      { comment: "3. cappuccino", description: "Hot" },
+      { comment: "4. whatever", description: "Cold" },
+    ],
+  },
+]);

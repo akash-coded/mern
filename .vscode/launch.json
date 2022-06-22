@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/html/css-basics/css-box-model-demo.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/html/css-basics/css-box-model-demo.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/html/bootstrap-basics/bootstrap-typography.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/html/bootstrap-basics/bootstrap-typography.html"
+    }
+  ]
+}

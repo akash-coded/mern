@@ -1,3 +1,5 @@
+use crudOperationsExampleDb
+
 db.products.insertMany([
   {
     _id: 1,

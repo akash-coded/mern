@@ -5,6 +5,7 @@ class Node {
     this.next = null;
   }
 }
+
 // linkedlist class
 class LinkedList {
   constructor() {

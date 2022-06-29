@@ -1,7 +1,5 @@
 import "./App.css";
-import React from "react";
-
-const { useEffect, useState } = React;
+import { useState, useEffect } from "react";
 
 function CounterWithNameAndSideEffect({ user }) {
   const [count, setCount] = useState(0);
@@ -11,7 +9,7 @@ function CounterWithNameAndSideEffect({ user }) {
   }, [user, count]);
 
   return (
-    <div>
+    <div className="App">
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>

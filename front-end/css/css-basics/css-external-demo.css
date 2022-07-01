@@ -1,7 +1,7 @@
 label {
-    color: blueviolet;
+  color: blueviolet !important;
 }
 
 .termsLabel {
-    color: red;
+  color: red;
 }

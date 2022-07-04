@@ -1,4 +1,4 @@
-let dayNumber = 10;
+let dayNumber = 2;
 console.log(`Day number ${dayNumber} of the week`);
 
 let day;

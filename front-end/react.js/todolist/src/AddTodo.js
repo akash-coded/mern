@@ -8,7 +8,7 @@ function AddTodo({ setTodos }) {
     console.log(inputRef.current);
     const text = event.target.elements.addTodo.value;
     const todo = {
-      id: 4,
+      id: Math.random(),
       text: text,
       done: false,
     };

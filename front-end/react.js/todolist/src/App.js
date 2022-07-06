@@ -17,7 +17,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo"></img>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
       <AddTodo setTodos={setTodos} />
     </div>
   );

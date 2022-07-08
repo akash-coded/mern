@@ -11,6 +11,16 @@ function TodoList({ todos, setTodos }) {
     setTodos(updatedTodos);
   }
 
+  if (!todos.length) {
+    return (
+      <div>
+        <h1>Todo List</h1>
+
+        <p>No todos left!</p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <h1>Todo List</h1>

@@ -1,20 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Welcome from "./Welcome";
-import CounterWithNameAndSideEffect from "./CounterWithNameAndSideEffect";
-import SearchFilterDemo from "./SearchFilterDemo";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
-    <Welcome user={"Akash"} />
-    <SearchFilterDemo />
-    <CounterWithNameAndSideEffect user={"Akash Das"} />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

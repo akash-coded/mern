@@ -1,6 +1,5 @@
-import "./App.css";
-import "./SearchFilterDemo";
 import { useState } from "react";
+import "./SearchFilterDemo";
 
 function SearchFilterDemo() {
   const list = [
@@ -28,7 +27,7 @@ function SearchFilterDemo() {
   };
 
   return (
-    <div className="App SearchFilterDemo">
+    <div className="SearchFilterDemo">
       <div>
         Search: <input name="query" type="text" onChange={handleSearch} />
       </div>

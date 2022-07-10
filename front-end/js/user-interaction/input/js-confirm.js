@@ -1,5 +1,3 @@
-confirm("Do you want to turn on notifications for this page?");
-
 let notificationOptInStatus = confirm(
   "Do you want to turn on notifications for this page?"
 );

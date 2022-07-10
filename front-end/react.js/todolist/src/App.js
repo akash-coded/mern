@@ -58,6 +58,3 @@ function App() {
 }
 
 export default App;
-
-// display a h1 with "Hi", if the message is equal to "Hello",
-// else print "Sorry, I'm busy." in h4 and red colour

@@ -1,12 +1,14 @@
 let virusConcentration = 0.9;
 let testResult;
 
+// without ternary operator
 if (virusConcentration > 0.7) {
-  testResult = "Symptomatic";
+  testResult = "symptomatic";
 } else {
-  testResult = "Asymptomatic";
+  testResult = "asymptomatic";
 }
 console.log(testResult);
 
-testResult = virusConcentration > 0.7 ? "Symptomatic" : "Asymptomatic";
+// with ternary operator
+testResult = virusConcentration > 0.7 ? "symptomatic" : "asymptomatic";
 console.log(testResult);

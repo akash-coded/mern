@@ -81,7 +81,7 @@ console.log(temp);
 console.log(`counter = ${counter}`); // 2
 
 counter = 1; // reset the counter
-temp = counter++;
+temp = counter--;
 console.log(temp); // 1
-console.log(`counter = ${counter}`); // 2
+console.log(`counter = ${counter}`); // 0
 console.log();

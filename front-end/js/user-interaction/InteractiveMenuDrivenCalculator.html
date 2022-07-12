@@ -17,6 +17,8 @@
           <input type="number" id="num2" placeholder="2nd number" />
           <input type="submit" value="Calculate" />
         </div>
+
+        <div id="operationMenu"></div>
       </form>
     </main>
 
@@ -30,15 +32,9 @@
           let num1 = document.getElementById("num1").value;
           let num2 = document.getElementById("num2").value;
 
-          document
-            .querySelector("#mainContent")
-            .append("Choose the operation to be performed::");
-          document.querySelector("#mainContent").append("1. Addition");
-          document.querySelector("#mainContent").append("2. Subtraction");
-          document.querySelector("#mainContent").append("3. Multiplication");
-          document.querySelector("#mainContent").append("4. Division");
-          document.querySelector("#mainContent").append("5. Modulus");
-          document.querySelector("#mainContent").append("6. Quit");
+          document.getElementById("operationMenu").innerHTML =
+            "<h2>Choose the operation:</h2> 1. Addition<br/> 6. Quit";
+
           let operation = parseInt(prompt("Enter choice[1-6]:"));
 
           let result = null;

@@ -41,6 +41,24 @@
       "name": "http://127.0.0.1:3001/front-end/js/user-interaction/input/js-document-input.html",
       "request": "launch",
       "url": "http://127.0.0.1:3001/front-end/js/user-interaction/input/js-document-input.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/js/user-interaction/input/js-document-input.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/js/user-interaction/input/js-document-input.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/js/user-interaction/output/js-document-output.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/js/user-interaction/output/js-document-output.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/js/user-interaction/InteractiveMenuDrivenCalculator.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/js/user-interaction/InteractiveMenuDrivenCalculator.html"
     }
   ]
 }

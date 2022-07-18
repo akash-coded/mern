@@ -10,6 +10,6 @@ function sayHiBye(firstName, lastName) {
     return firstName + " " + lastName; //Here the nested function getFullName() is made for convenience. It can access the outer variables and so can return the full name.
   }
 
-  console.log("Hello, " + getFullName());
+  console.log("Hi, " + getFullName());
   console.log("Bye, " + getFullName());
 }

@@ -1,9 +1,12 @@
-let number1 = 5;
-let number2 = 10;
+// non-parameterized function
+function displayMessage() {
+  console.log("A message.");
+}
+displayMessage();
 
+// parameterized function
 function myAdd(num1, num2) {
   return num1 + num2;
 }
-
 let sum = myAdd(2, 4);
-console.log(sum);
+console.log("Sum = " + sum);

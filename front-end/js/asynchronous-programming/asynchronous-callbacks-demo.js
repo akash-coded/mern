@@ -17,5 +17,5 @@ let URL = "https://www.javascripttutorial.net/pic.jpg";
 
 // upload(URL, process);
 
-upload(URL, process, (url) => console.log(`The URL ${url} is not valid`));
-upload("", process, (url) => console.log(`The URL ${url} is not valid`));
+upload(URL, process, (url) => console.log(`Processing the picture ${url}`));
+// upload("", process, (url) => console.log(`The URL ${url} is not valid`));

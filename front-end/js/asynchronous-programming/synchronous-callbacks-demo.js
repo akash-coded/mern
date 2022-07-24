@@ -8,8 +8,8 @@ function filter(numbers, callback) {
   return results;
 }
 
-let numbers = [1, 2, 4, 7, 3, 5, 6];
+let myNumbers = [1, 2, 4, 7, 3, 5, 6];
 
-let oddNumbers = filter(numbers, (number) => number % 2 != 0);
+let oddNumbers = filter(myNumbers, (number) => number % 2 != 0);
 
 console.log(oddNumbers);

@@ -4,20 +4,17 @@
  * @param {number} b
  * @returns number
  */
-let sum = (a, b) => a + b;
-
 // This arrow function is a shorter form of:
 // let sum = function (a, b) {
 //   return a + b;
 // };
-
+let sum = (a, b) => a + b;
 console.log(sum(2, 3));
 
 // If we have only one argument,
 // then parentheses around parameters can be omitted, making that even shorter.
 let double = (n) => n * 2;
 // roughly the same as: let double = function(n) { return n * 2 }
-
 console.log(double(6));
 
 // If there are no arguments, parentheses will be empty (but they should be present):
@@ -35,5 +32,4 @@ let product = (a, b) => {
   let result = a * b;
   return result; // if we use curly braces, then we need an explicit "return"
 };
-
 console.log(product(2, 7));

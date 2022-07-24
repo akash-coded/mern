@@ -4,11 +4,11 @@
  * We’ll create a helper function curry(f) that performs currying for a two-argument f.
  * In other words, curry(f) for two-argument f(a, b) translates it into a function
  */
-function curry(f) {
+function curry(fn) {
   // curry(f) does the currying transform
   return function (a) {
     return function (b) {
-      return f(a, b);
+      return fn(a, b);
     };
   };
 }

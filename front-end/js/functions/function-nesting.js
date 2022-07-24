@@ -13,3 +13,5 @@ function sayHiBye(firstName, lastName) {
   console.log("Hi, " + getFullName());
   console.log("Bye, " + getFullName());
 }
+
+sayHiBye("Akash", "Das");

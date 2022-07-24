@@ -55,3 +55,18 @@ function displayAge(age) {
 
 let valueObtained2 = displayAge(5);
 console.log(valueObtained2);
+console.log();
+
+/**
+ *
+ * @returns {Function}
+ */
+function getMultiplier() {
+  return function (a, b) {
+    console.log("Product = " + a * b);
+  };
+}
+
+console.log(getMultiplier());
+let multiply = getMultiplier(); // function expression
+multiply(3, 4);

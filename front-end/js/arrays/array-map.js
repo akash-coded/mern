@@ -50,7 +50,7 @@ const employees = [
 
 // calculate the net amount to be given to the employees
 const calcAmt = (obj) => {
-  newObj = {};
+  let newObj = {};
   newObj.name = obj.name;
   newObj.netEarning = obj.salary + obj.bonus - obj.tax;
   return newObj;

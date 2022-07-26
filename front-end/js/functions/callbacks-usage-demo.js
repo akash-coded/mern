@@ -52,7 +52,16 @@ function filter(numbers, fn) {
 let numArray2 = [1, 2, 4, 7, 3, 5, 6, 9];
 console.log(filter(numArray2, isOdd));
 console.log(filter(numArray2, isEven));
+console.log();
+
+// Using anonymous functions as callbacks
 let multiplesOf3 = filter(numArray2, function (num) {
   return num % 3 == 0;
 });
 console.log(multiplesOf3);
+console.log();
+
+// Using arrow functions as callbacks
+multiplesOf3 = filter(numArray2, (num) => num % 3 == 0);
+console.log(multiplesOf3);
+console.log();

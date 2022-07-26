@@ -88,7 +88,8 @@ const sendStatusNotification = () => {
 const promise = getUsers2();
 
 function onFulfilled(users) {
-  console.log(users);
+  const userToBeFound = users.find((user) => user.username === "john");
+  console.log(userToBeFound);
 }
 function onRejected(error) {
   console.log(error);
@@ -99,14 +100,18 @@ promise.then(onFulfilled, onRejected);
 
 // or
 getUsers2().then(
-  (users) => console.log(users),
+  (users) => {
+    const userToBeFound = users.find((user) => user.username === "john");
+    console.log(userToBeFound);
+  },
   (error) => console.log(error)
 );
 
 // or
 getUsers2()
   .then((users) => {
-    console.log(users);
+    const userToBeFound = users.find((user) => user.username === "john");
+    console.log(userToBeFound);
     sendStatusNotification();
   })
   .catch((error) => {
@@ -116,6 +121,9 @@ getUsers2()
 
 // or
 getUsers2()
-  .then((users) => console.log(users))
+  .then((users) => {
+    const userToBeFound = users.find((user) => user.username === "john");
+    console.log(userToBeFound);
+  })
   .catch((error) => console.log(error))
   .finally(() => sendStatusNotification());

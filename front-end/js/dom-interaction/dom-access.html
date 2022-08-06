@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS DOM Interaction</title>
+  </head>
+  <body>
+    <p id="paragraph1">First paragraph inside the body</p>
+    <p id="paragraph2">Second paragraph inside the body</p>
+    <div id="div1">
+      <p id="innerParagraph1">First paragraph inside the div</p>
+      <p id="innerParagraph2"></p>
+    </div>
+
+    <button onClick="showAlert()">Show Alert</button>
+
+    <script>
+      let paragraph2Text = document.getElementById("paragraph2").innerText;
+      console.log("Contents of Paragraph-2: " + paragraph2Text);
+
+      document.getElementById("innerParagraph2").innerText =
+        "Second paragraph inside the div";
+
+      function showAlert() {
+        alert("The button has been clicked");
+      }
+    </script>
+  </body>
+</html>

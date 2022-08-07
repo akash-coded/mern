@@ -71,6 +71,18 @@
       "name": "http://127.0.0.1:3000/front-end/js/dom-interaction/dom-access.html",
       "request": "launch",
       "url": "http://127.0.0.1:3000/front-end/js/dom-interaction/dom-access.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/js/ajax/ajax-demo.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/js/ajax/ajax-demo.html"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://127.0.0.1:3000/front-end/js/ajax/ajax.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/front-end/js/ajax/ajax.html"
     }
   ]
 }

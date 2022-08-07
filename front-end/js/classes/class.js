@@ -1,3 +1,6 @@
+/**
+ * Class
+ */
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;
@@ -15,6 +18,27 @@ class Person {
 let person1 = new Person("John", "Doe");
 person1.sayHi();
 
+/**
+ * Constructor Function
+ */
+function MyPerson(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+
+  this.getFullName = function () {
+    return this.firstName + " " + this.lastName;
+  };
+
+  this.sayHi = function () {
+    console.log("Hi from " + this.getFullName());
+  };
+}
+let person2 = new MyPerson("Gabriel", "Iglesias");
+person2.sayHi();
+
+/**
+ * Class Expression
+ */
 let Animal = class {
   sayHi() {
     console.log("Hi");

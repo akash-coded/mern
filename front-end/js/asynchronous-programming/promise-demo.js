@@ -2,12 +2,8 @@ function upload(url) {
   console.log(`Uploading the picture ${url} ...`);
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (url) {
-        resolve(url);
-      } else {
-        reject(url);
-      }
-    }, 1000);
+      url ? resolve(url) : reject(url);
+    }, 2000);
   });
 }
 

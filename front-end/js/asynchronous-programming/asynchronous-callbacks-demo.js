@@ -2,7 +2,7 @@ function upload(url, successCallback, failureCallback) {
   setTimeout(() => {
     // script to download the picture here
     console.log(`Uploading the picture ${url} ...`);
-    !url ? failureCallback(url) : successCallback(url);
+    url ? successCallback(url) : failureCallback(url);
   }, 1000);
 }
 
@@ -10,7 +10,7 @@ function process(picture) {
   console.log(`Processing the picture ${picture}`);
 }
 
-let URL = "https://www.javascripttutorial.net/pic.jpg";
+let URL = "";
 
 // upload(URL);
 // process(URL);

@@ -14,8 +14,8 @@ const items = ["item1", "item2", "item3"];
 
 // before
 const copyItems = [];
-for (let i = 0; i < items.length; i++) {
-  copyItems.push(items[i]);
+for (let item of items) {
+  copyItems.push(item);
 }
 console.table(copyItems);
 

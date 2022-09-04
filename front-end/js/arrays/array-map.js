@@ -9,6 +9,11 @@ function square(number) {
   return number * number;
 }
 
+// for (let i = 0; i < numbers.length; i++) {
+//   numbers[i] = square(numbers[i]);
+// }
+// console.log(numbers); // Output: [4, 16, 36, 64, 100]
+
 // apply square() function to each item of the numbers list
 let square_numbers = numbers.map(square);
 console.log(square_numbers);

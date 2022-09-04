@@ -5,6 +5,7 @@ import logo from "./logo.svg";
 import CounterWithNameAndSideEffect from "./CounterWithNameAndSideEffect";
 import SearchFilterDemo from "./SearchFilterDemo";
 import AddTodo from "./AddTodo";
+import ChildComponent from "./ChildComponent";
 import TodoList from "./TodoList";
 import Welcome from "./Welcome";
 
@@ -20,8 +21,14 @@ function App() {
     <div className="App">
       <img src={logo} className="App-logo" alt="logo"></img>
 
+      <ChildComponent
+        message={
+          "Greeting message from the parent component rendered in the child component"
+        }
+      />
+
       <Routes>
-        <Route exact path="/" element={<Welcome user={"Akash"} />} />
+        <Route exact path="/welcome" element={<Welcome user={"Akash"} />} />
 
         <Route exact path="/search" element={<SearchFilterDemo />} />
 

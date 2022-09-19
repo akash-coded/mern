@@ -10,7 +10,9 @@ function checkEven(number) {
 }
 
 // create a new array by filter even numbers from the numbers array
-let evenNumbers = numbers.filter(checkEven);
+let evenNumbers = numbers.filter(function (n) {
+  return n % 2 == 0;
+});
 console.log(evenNumbers);
 
 /**

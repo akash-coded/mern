@@ -15,7 +15,9 @@ function square(number) {
 // console.log(numbers); // Output: [4, 16, 36, 64, 100]
 
 // apply square() function to each item of the numbers list
-let square_numbers = numbers.map(square);
+let square_numbers = numbers.map(function (number) {
+  return number * number;
+});
 console.log(square_numbers);
 
 /**

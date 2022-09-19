@@ -67,3 +67,9 @@ function showMessage4(from, getTextFn) {
 
 showMessage4("Akash", getMessage); // passing a function as argument
 console.log();
+
+// passing an anonymous function as argument
+showMessage4("Akash Das", function () {
+  return "An anonymous message";
+});
+console.log();

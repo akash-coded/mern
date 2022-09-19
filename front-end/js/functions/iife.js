@@ -25,7 +25,8 @@ let anonymousSum = findSum(7, 3);
 console.log(anonymousSum);
 
 /**
- * IIFE (Self-executing function)
+ * Immediately-Invoked Function Expressin (IIFE)
+ * Self-executing function
  */
 let additiveResult = (function (a, b) {
   return a + b;

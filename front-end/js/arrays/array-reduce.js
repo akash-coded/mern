@@ -10,7 +10,9 @@ function joinStrings(accumulator, currentValue) {
 }
 
 // reduce join each element of the string
-let joinedString = message.reduce(joinStrings);
+let joinedString = message.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+});
 console.log(joinedString);
 
 /**

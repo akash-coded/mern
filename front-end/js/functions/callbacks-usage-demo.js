@@ -1,13 +1,13 @@
 function oddFilter(numbers) {
-  let evenNumbers = [];
+  let oddNumbers = [];
 
   for (const number of numbers) {
     if (number % 2 != 0) {
-      evenNumbers.push(number);
+      oddNumbers.push(number);
     }
   }
 
-  return evenNumbers;
+  return oddNumbers;
 }
 
 function evenFilter(numbers) {

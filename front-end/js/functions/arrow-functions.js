@@ -4,12 +4,14 @@
  * @param {number} b
  * @returns number
  */
-// This arrow function is a shorter form of:
-// let sum = function (a, b) {
-//   return a + b;
-// };
+let sum1 = function (a, b) {
+  return a + b;
+};
+console.log(sum1(112, 123));
+
+// Arrow function
 let sum = (a, b) => a + b;
-console.log(sum(2, 3));
+console.log(sum(112, 123));
 
 // If we have only one argument,
 // then parentheses around parameters can be omitted, making that even shorter.

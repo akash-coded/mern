@@ -63,10 +63,11 @@ console.log();
  */
 function getMultiplier() {
   return function (a, b) {
-    console.log("Product = " + a * b);
+    return a * b;
   };
 }
 
-console.log(getMultiplier());
 let multiply = getMultiplier(); // function expression
-multiply(3, 4);
+console.log(multiply);
+let product = multiply(3, 4);
+console.log(product);

@@ -9,3 +9,5 @@ multiplyWith5(7);
 
 let multiplyWith10 = multiplicationClosure(10);
 multiplyWith10(3);
+
+multiplicationClosure(8)(4); // currying

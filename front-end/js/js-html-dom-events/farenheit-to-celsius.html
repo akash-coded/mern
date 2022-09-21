@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farenheit - Celsius</title>
+  </head>
+  <body>
+    Enter temperature in F:
+    <input type="number" id="Farenheit" oninput="myFunction1()" /> <br />
+
+    Enter temperature in C:
+    <input type="number" id="Celsius" oninput="myFunction2()" /> <br />
+
+    <script>
+      function myFunction1() {
+        let faren = document.getElementById("Farenheit");
+        faren.value = ((faren.value - 32) * 5) / 9;
+        document.getElementById("Celsius").value = faren.value;
+      }
+
+      function myFunction2() {}
+    </script>
+  </body>
+</html>

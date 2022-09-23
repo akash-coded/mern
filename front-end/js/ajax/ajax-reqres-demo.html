@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Demo with reqres.in</title>
+  </head>
+  <body>
+    <button id="ajaxButton1" type="button">Show User Details</button>
+    <hr />
+
+    <div id="ajaxResponseContent"></div>
+    <hr />
+
+    <table id="userDetails"></table>
+
+    <script>
+      (function () {
+        let httpRequest;
+        document
+          .getElementById("ajaxButton1")
+          .addEventListener("click", makeRequest);
+
+        function makeRequest() {
+          httpRequest = new XMLHttpRequest();
+
+          if (!httpRequest) {
+            alert("Giving up :( Cannot create an XMLHTTP instance");
+            return false;
+          }
+          httpRequest.onreadystatechange = displayEmployees;
+          httpRequest.open("GET", "https://reqres.in/api/users/2");
+          httpRequest.send();
+        }
+
+        function displayEmployees() {
+          try {
+            if (httpRequest.readyState === XMLHttpRequest.DONE) {
+              if (httpRequest.status === 200) {
+                console.log(httpRequest.responseText);
+                document.getElementById("ajaxResponseContent").innerText =
+                  httpRequest.responseText;
+
+                let user = JSON.parse(httpRequest.responseText);
+                console.log(user);
+
+                tbody = `<caption>User Details</caption>`;
+                tbody += `<tr><th>ID: </th><td>${user.data.id}</td></tr>`;
+                tbody += `<tr><th>Email: </th><td>${user.data.email}</td></tr>`;
+                tbody += `<tr><th>First name: </th><td>${user.data.first_name}</td></tr>`;
+                tbody += `<tr><th>Last name: </th><td>${user.data.last_name}</td></tr>`;
+                tbody += `<tr><th>Avatar: </th><td><img src="${user.data.avatar}" alt="user avatar" /></td></tr>`;
+
+                document.getElementById("userDetails").innerHTML = tbody;
+                document.getElementById("userDetails").border = "1";
+              } else {
+                console.error("There was a problem with the request.");
+                alert("There was a problem with the request.");
+              }
+            }
+          } catch (e) {
+            console.error(e);
+            alert("Caught Exception: " + e.description);
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property | CSS</title>
+    <style>
+        .container {
+            border: 2px solid rebeccapurple;
+            padding: 1em;
+            margin: 0.5em;
+        }
+
+        .box {
+            border: 2px solid skyblue;
+            padding: 0.5em;
+            margin: 2px;
+        }
+
+        .custom-dimensions {
+            width: 50px;
+            height: 70px;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box inline custom-dimensions">One</div>
+        <div class="box inline custom-dimensions">Two</div>
+        <div class="box inline custom-dimensions">Three</div>
+    </div>
+
+    <div class="container">
+        <span class="box block">One</span>
+        <span class="box block">Two</span>
+        <span class="box block">Three</span>
+    </div>
+
+    <div class="container">
+        <div class="box inline-block custom-dimensions">One</div>
+        <div class="box inline-block custom-dimensions">Two</div>
+        <div class="box inline-block custom-dimensions">Three</div>
+    </div>
+
+    <div class="container">
+        <div class="box invisible">One</div>
+        <div class="box invisible">Two</div>
+        <div class="box invisible">Three</div>
+    </div>
+
+    <div class="container">
+        <div class="box hidden">One</div>
+        <div class="box hidden">Two</div>
+        <div class="box hidden">Three</div>
+    </div>
+</body>
+
+</html>

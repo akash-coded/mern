@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Boxmodel Demo</title>
+  <style>
+    .box {
+      border: 5px solid rebeccapurple;
+      background-color: peachpuff;
+      padding: 40px;
+      margin: 40px;
+      width: 300px;
+      height: 150px;
+    }
+
+    .alternate {
+      box-sizing: border-box;
+    }
+
+    p,
+    ul {
+      border: 2px solid rebeccapurple;
+      padding: 0.5em;
+    }
+
+    .block,
+    li {
+      border: 2px solid skyblue;
+      padding: 0.5em;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      margin: 5px;
+    }
+
+    .block {
+      display: block;
+    }
+
+    #lastParagraph {
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Boxmodel</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="box">I use the standard box model.</div>
+      <div class="box alternate">I use the alternate box model.</div>
+    </section>
+
+    <section>
+      <p>I am a paragraph. A short one.</p>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+
+      <p id="lastParagraph">
+        I am another paragraph. Some of the
+        <span class="block">words</span> have been wrapped in a
+        <span>span element</span>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

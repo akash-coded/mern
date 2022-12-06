@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Interaction | JavaScript</title>
+</head>
+
+<body>
+    <p id="leading-paragraph">
+        This is a paragraph about Web Development. It contains two important terminologies:
+        <span name="terminology">Front end</span>
+        and
+        <span name="terminology">Back end</span>
+    </p>
+
+    <div class="description">This is a div.</div>
+
+    <div>This is another div.</div>
+
+    <script>
+        let paragraphHTML = document.getElementById("leading-paragraph").innerHTML;
+        console.log(paragraphHTML);
+
+        let paragraphText = document.getElementById("leading-paragraph").innerText;
+        console.log(paragraphText);
+
+        let span1Text = document.getElementsByName("terminology")[0].innerText;
+        let span2Text = document.getElementsByName("terminology")[1].innerText;
+        console.log(span1Text);
+        console.log(span2Text);
+
+        let divText = document.getElementsByClassName("description")[0].innerText;
+        console.log(divText);
+
+        let anotherDivText = document.getElementsByTagName("div")[1].innerText;
+        console.log(anotherDivText);
+    </script>
+</body>
+
+</html>

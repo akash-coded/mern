@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Demo</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css-demo.css">
+  <!-- Internal CSS -->
+  <style>
+    label {
+      color: red;
+      background-color: yellow;
+    }
+
+    h1,
+    h2 {
+      color: brown;
+    }
+
+    #submit,
+    #reset {
+      color: purple;
+    }
+
+    .purple-text {
+      color: purple;
+    }
+
+    .bold-text {
+      font-weight: bolder;
+    }
+
+    #lastName-container>label {
+      color: aqua;
+    }
+
+    fieldset>p:first-of-type>label:hover {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Inline CSS -->
+  <h1 style="color: blue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    HTML Form with CSS
+  </h1>
+
+  <h1>Another heading</h1>
+
+  <form action="#" method="GET">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <p>
+        <label for="firstName">First name: </label>
+        <input type="text" name="firstName" placeholder="John" autofocus required />
+      </p>
+      <p id="lastName-container">
+        <label for="lastName">Last name: </label>
+        <input type="text" name="lastName" placeholder="Doe" />
+      </p>
+
+      <p>
+        <label for="email">Email: </label>
+        <input type="email" name="email" value="test@example" required />
+      </p>
+
+      <p>
+      <div>
+        <label>
+          <input type="radio" name="gender" value="male" />
+          Male
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Female
+        </label>
+      </div>
+      </p>
+
+      <p>
+        <input id="submit" class="purple-text" type="submit" value="Submit">
+        <input id="reset" class="purple-text bold-text" type="reset" value="Reset">
+      </p>
+    </fieldset>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Modal Plugin Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-2">Bootstrap Modal Plugin Demo</h1>
+
+      <h6>
+        Use Bootstrap's JavaScript modal plugin to add dialogs to your site for
+        lightboxes, user notifications, or completely custom content.
+      </h6>
+
+      <h6>
+        Modals are built with HTML, CSS, and JavaScript. They're positioned over
+        everything else in the document and remove scroll from the body so that
+        modal content scrolls instead. Clicking on the modal “backdrop” will
+        automatically close the modal. Bootstrap only supports one modal window
+        at a time. Nested modals aren't supported as we believe them to be poor
+        user experiences.
+      </h6>
+
+      <div class="container mb-4">
+        <h1 class="display-4">Static Modal</h1>
+
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="modal"
+          data-target="#staticModalExample"
+        >
+          Launch static modal
+        </button>
+
+        <div
+          class="modal fade"
+          id="staticModalExample"
+          tabindex="-1"
+          role="dialog"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticModalExampleLabel">
+                  Modal title
+                </h5>
+                <button class="close" type="button" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here</p>
+                <h5>Popover in a modal</h5>
+                <p>
+                  This
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-secondary popover-test"
+                    data-toggle="popover"
+                    title="Popover title"
+                    data-content="Popover body content is set in this attribute."
+                    >button</a
+                  >
+                  triggers a popover on click.
+                </p>
+                <h5>Tooltips in a modal</h5>
+                <p>
+                  <a
+                    href="#"
+                    class="tooltip-test"
+                    data-toggle="tooltip"
+                    title="Tooltip"
+                    >This link</a
+                  >
+                  and
+                  <a
+                    href="#"
+                    class="tooltip-test"
+                    data-toggle="tooltip"
+                    title="Tooltip"
+                    >that link</a
+                  >
+                  have tooltips on hover.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button class="btn btn-success" type="button">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

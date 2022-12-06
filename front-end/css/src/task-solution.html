@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage with Semantic Tags and CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: auto;
+      }
+      body {
+        background-color: #9c9b9b;
+      }
+      h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+      header > h1 {
+        color: white;
+        font-size: 40px;
+      }
+
+      h2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+
+      .item-1 {
+        grid-area: navbar;
+      }
+
+      article {
+        grid-area: main;
+      }
+
+      aside {
+        grid-area: rsidebar;
+      }
+
+      .item-2 {
+        grid-area: footer;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "navbar navbar navbar navbar navbar navbar"
+          "main main main main rsidebar rsidebar"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+        padding: 10px;
+      }
+
+      main {
+        padding: 0 10%;
+      }
+      header > h1 {
+        text-align: center;
+      }
+      header {
+        margin-top: 20px;
+      }
+      .nav {
+        background-color: #ee7aee;
+        padding: 30px 40px;
+      }
+
+      .nav-items {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .nav-link {
+        width: auto;
+        margin: auto;
+      }
+
+      .search-box {
+        padding: 5px;
+      }
+      .go-btn {
+        padding: 5px 25px;
+        background-color: black;
+        color: white;
+      }
+
+      article {
+        background-color: white;
+        padding: 15px;
+      }
+      article > h1 {
+        text-align: center;
+      }
+      .article-content {
+        align-items: center;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      section > p {
+        margin-bottom: 10px;
+      }
+
+      aside {
+        background-color: #ee73ee;
+        padding: 15px;
+        justify-content: center;
+      }
+      aside h1 {
+        text-align: center;
+      }
+      aside > ul {
+        padding: 10px;
+      }
+      .sidebar-list {
+        color: blue;
+        text-decoration: underline;
+        padding: 10px;
+      }
+      footer {
+        background-color: white;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="item-1">
+          <nav class="nav">
+            <ul class="nav-items">
+              <li class="nav-link">HOME</li>
+              <li class="nav-link">OUR TEAM</li>
+              <li class="nav-link">PROJECTS</li>
+              <li class="nav-link">CONTACT</li>
+              <li class="nav-link">
+                <input
+                  type="text"
+                  placeholder="Search Query"
+                  class="search-box"
+                />
+                <input type="button" value="Go!" class="go-btn" />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <article>
+          <h1>Article Heading</h1>
+          <p class="article-content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries
+          </p>
+          <section>
+            <h2>Subsection</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries
+            </p>
+          </section>
+          <section>
+            <h2>Another Section</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries
+            </p>
+          </section>
+        </article>
+        <aside>
+          <h1>Related</h1>
+          <ul>
+            <li class="sidebar-list">Oh I do like to beside the seaside</li>
+            <li class="sidebar-list">Oh I do like to beside the sea</li>
+            <li class="sidebar-list">Although in the north of England</li>
+            <li class="sidebar-list">It never stops raining</li>
+            <li class="sidebar-list">Oh well..</li>
+          </ul>
+        </aside>
+
+        <div class="item-2">
+          <footer>
+            <p>©Copyright 2050 by anybody. All rights reserved</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Containers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container my-5" style="background-color: yellow">
+      <h1>Container</h1>
+
+      <h6>The .container class provides a responsive fixed width container.</h6>
+
+      <h6>
+        The div with class "container" will have a fixed left and right margin
+        and will not take the complete width of its parent or the viewport.
+      </h6>
+
+      <p>
+        This is inside a Bootstrap container. Since we are using the class
+        container, the div will not take complete width of it's parent.
+      </p>
+    </div>
+
+    <!-- Fluid container -->
+    <div class="container-fluid my-5" style="background-color: green">
+      <h1>Fluid Container</h1>
+
+      <h6>
+        The .container-fluid class provides a full-width container which spans
+        the entire width of the viewport.
+      </h6>
+
+      <h6>
+        The div with class “container-fluid” will take-up the complete width of
+        the viewport and will expand or shrink when ever the viewport is
+        resized.
+      </h6>
+
+      <p>
+        This is inside a Bootstrap fluid container. Since we are using the class
+        container-fluid, the below div will take-up complete width of the
+        viewport and will expand or contract whenever the viewport is resized.
+      </p>
+    </div>
+
+    <!-- Nested containers -->
+    <div class="container text-center my-5" style="background-color: orange">
+      <h1>Top-level container</h1>
+      <p>Paragraph-1</p>
+
+      <div
+        class="container text-left"
+        style="background-color: rgb(109, 177, 219)"
+      >
+        <h1>Second-level container</h1>
+        <p>Paragraph-2</p>
+
+        <div class="container" style="background-color: rgb(137, 219, 109)">
+          <h1>Third-level container</h1>
+          <p>Paragraph-3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container with rows and columns -->
+    <div class="container my-5 text-center" style="background-color: beige">
+      <h1>Container with Rows and Columns</h1>
+      <div class="row">
+        <div class="col-4" style="background-color: pink">Div-1</div>
+        <div class="col-4" style="background-color: greenyellow">Div-2</div>
+        <div class="col-4" style="background-color: blue">Div-3</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: red">Div-4</div>
+        <div class="col" style="background-color: black">Div-5</div>
+        <div class="col" style="background-color: gold">Div-6</div>
+      </div>
+      <div class="row">
+        <div class="col-4" style="background-color: aqua">Div-7</div>
+        <div class="col-8" style="background-color: orange">Div-8</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: brown">Div-9</div>
+        <div class="col" style="background-color: purple">Div-10</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: green">Div-11</div>
+      </div>
+      <div class="row">
+        <div class="col-4" style="background-color: goldenrod">Div-12</div>
+        <div class="offset-4 col-4" style="background-color: lightblue">
+          Div-13
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-3 col-3" style="background-color: cyan">Div-14</div>
+        <div class="offset-3 col-3" style="background-color: magenta">
+          Div-15
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-4 col-4 border border-dark bg-primary">Div-16</div>
+      </div>
+    </div>
+
+    <!-- Containers with responsive columns for mobile and desktop -->
+    <div class="container my-5">
+      <h1>Responsive Container</h1>
+      <div class="row border border-danger bg-warning text-center">
+        <div
+          class="col-8 col-sm-4 col-md-10 col-lg-6 col-xl-2 border border-dark bg-info"
+        >
+          Div-1
+        </div>
+      </div>
+    </div>
+
+    <!-- Containers with responsive columns for mobile and desktop -->
+    <div class="container my-5">
+      <h1>Responsive Container with Centered Content</h1>
+      <div class="row border border-danger bg-warning text-center">
+        <div
+          class="offset-2 col-8 offset-sm-4 col-sm-4 offset-md-1 col-md-10 offset-lg-3 col-lg-6 offset-xl-5 col-xl-2 border border-dark bg-info"
+        >
+          Div-1
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

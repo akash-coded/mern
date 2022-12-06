@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events - 2</title>
+  </head>
+  <body>
+    Enter your name:
+    <input
+      type="text"
+      onfocus="myFunction(this)"
+      onblur="myResetFunction(this)"
+    />
+
+    <p>
+      When the input field gets focus, a function is triggered which changes the
+      background-color.
+    </p>
+    <script>
+      function myFunction(x) {
+        x.style.background = "yellow";
+      }
+
+      function myResetFunction(x) {
+        x.style.background = "white";
+      }
+    </script>
+  </body>
+</html>

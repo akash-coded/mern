@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Display Grid Demo</title>
+  <style>
+    .grid-container-1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: red;
+      padding: 10px;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .grid-item {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .item-1 {
+      grid-area: header;
+    }
+
+    .item-2 {
+      grid-area: lsidebar;
+    }
+
+    .item-3 {
+      grid-area: main;
+    }
+
+    .item-4 {
+      grid-area: rsidebar;
+    }
+
+    .item-5 {
+      grid-area: footer;
+    }
+
+    .grid-container-2 {
+      display: grid;
+      grid-template-areas:
+        "header header header header header header"
+        "lsidebar main main main rsidebar rsidebar"
+        "lsidebar footer footer footer footer footer";
+      gap: 10px;
+      background-color: blue;
+      padding: 10px;
+    }
+
+    .grid-container-2>div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: yellow;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The display grid Demo</h1>
+
+  <h2>Grid Columns</h2>
+  <div class="grid-container-1">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+
+  <h2>Grid Template Areas</h2>
+  <div class="grid-container-2">
+    <div class="item-1">Header</div>
+    <div class="item-2">LSidebar</div>
+    <div class="item-3">Main</div>
+    <div class="item-4">RSidebar</div>
+    <div class="item-5">Footer</div>
+  </div>
+</body>
+
+</html>

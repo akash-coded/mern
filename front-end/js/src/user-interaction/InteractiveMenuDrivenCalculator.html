@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & JS Calculator</title>
+  </head>
+  <body>
+    <h1>Welcome to the best calculator out there!</h1>
+
+    <main id="mainContent">
+      <form action="#" onSubmit="event.preventDefault(); calculate();">
+        <h2>Enter two numbers:</h2>
+        <div>
+          <input type="number" id="num1" placeholder="1st number" />
+          <input type="number" id="num2" placeholder="2nd number" />
+          <input type="submit" value="Calculate" />
+        </div>
+
+        <div id="operationMenu"></div>
+      </form>
+    </main>
+
+    <script>
+      function calculate() {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let continueAgain = false;
+        loop: do {
+          let num1 = document.getElementById("num1").value;
+          let num2 = document.getElementById("num2").value;
+
+          document.getElementById("operationMenu").innerHTML =
+            "<h2>Choose the operation:</h2> 1. Addition<br/> 6. Quit";
+
+          let operation = parseInt(prompt("Enter choice[1-6]:"));
+
+          let result = null;
+          switch (operation) {
+            case 1:
+              result = num1 + num2;
+              break;
+            case 2:
+              result = num1 - num2;
+              break;
+            case 3:
+              result = num1 * num2;
+              break;
+            case 4:
+              result = num1 / num2;
+              break;
+            case 5:
+              result = num1 % num2;
+              break;
+            case 6:
+              break loop;
+            default:
+              alert("Invalid choice!");
+              break;
+          }
+          console.log("Result = " + result);
+          console.log("Choose whether to continue...");
+          continueAgain = confirm("Do you want to continue?");
+        } while (continueAgain);
+        console.log("Goodbye.");
+      }
+    </script>
+  </body>
+</html>

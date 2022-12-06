@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="css-demo.css" />
+    <style>
+      p {
+        color: red;
+      }
+
+      #paragraph2 {
+        color: yellow !important;
+      }
+
+      /* Defining a CSS class */
+      .custom-paragraph {
+        color: purple !important;
+      }
+
+      .large-font {
+        font-size: large;
+      }
+
+      p:hover {
+        color: black !important;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="paragraph1">First paragraph</p>
+    <p id="paragraph2">Second paragraph</p>
+    <!-- Using the custom CSS class -->
+    <p id="paragraph3" class="custom-paragraph large-font">Third paragraph</p>
+    <p style="color: green">Fourth</p>
+  </body>
+</html>

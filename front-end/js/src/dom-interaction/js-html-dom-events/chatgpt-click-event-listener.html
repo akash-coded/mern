@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS | Event Listeners</title>
+  </head>
+  <body>
+    <button id="myButton">Click me!</button>
+
+    <script>
+      // Get a reference to the button element
+      let button = document.getElementById("myButton");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        // This code will be executed when the button is clicked
+        alert("The button was clicked!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,3 +1,12 @@
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 /**
  * Assuming there are no dots in the personal info part of the email
  * */
@@ -16,11 +25,7 @@ function validateEmail(email) {
     return false;
   }
 
-  if (dotPos === email.length - 1) {
-    return false;
-  }
-
-  return true;
+  return dotPos !== email.length - 1;
 }
 
 function validateEmailWithRegex(email) {
@@ -31,25 +36,23 @@ function validateEmailWithRegex(email) {
 
 function checkInputEmail(email) {
   let isValidEmail = validateEmail(email);
+  let emailInput = document.getElementById("email");
+  let emailErrorSpan = document.getElementById("emailError");
   if (!isValidEmail) {
-    document.getElementById("emailHelp").innerText = "Invalid email!";
+    emailErrorSpan.innerText = "Invalid email!";
+    emailInput.valid = false;
     return false;
   }
-  document.getElementById("emailHelp").remove();
+  emailErrorSpan.remove();
   alert("Valid email!");
   return true;
 }
 
-function escapeHtml(unsafe) {
-  return unsafe
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
+document.getElementById("submit").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  window.history.back();
 
-function validateFormInputs() {
   let email = document.getElementById("email").value;
 
   // input sanitization
@@ -57,5 +60,5 @@ function validateFormInputs() {
   email = escapeHtml(email);
 
   // input validation
-  return checkInputEmail(email);
-}
+  console.log(checkInputEmail(email));
+});

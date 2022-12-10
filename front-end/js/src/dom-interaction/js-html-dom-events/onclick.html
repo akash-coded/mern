@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS | HTML DOM Events</title>
+    <style>
+      .modified {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML DOM Events & Event Listener</h1>
+
+    <p id="paragraph1">This is the original content of paragraph1</p>
+
+    <button id="modifyButton">Modify</button>
+    <button id="resetButton">Reset</button>
+
+    <script>
+      let paragraph1 = document.getElementById("paragraph1");
+      let modifyButton = document.getElementById("modifyButton");
+
+      modifyButton.onclick = function () {
+        paragraph1.innerText = "This is the modified content of paragraph1";
+
+        paragraph1.classList.add("modified");
+      };
+
+      let resetButton = document.getElementById("resetButton");
+      resetButton.onclick = function () {
+        paragraph1.innerText = "This is the original content of paragraph1";
+
+        paragraph1.classList.remove("modified");
+      };
+    </script>
+  </body>
+</html>

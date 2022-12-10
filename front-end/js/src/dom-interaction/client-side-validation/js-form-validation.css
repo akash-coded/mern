@@ -1,0 +1,66 @@
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: red;
+}
+
+#emailField {
+  margin-top: 1rem;
+}
+
+#actionButtons {
+  margin-top: 1rem;
+}
+
+#email {
+  width: 20rem;
+  border: 1px solid black;
+}
+
+#email:valid {
+  border: 1px solid green;
+}
+
+#email:invalid {
+  border: 1px solid red;
+}
+
+#email:valid + .error-message {
+  display: none;
+}
+
+#email:invalid + .error-message {
+  display: block;
+}
+
+#email:valid + .error-message::after {
+  content: "Valid email address.";
+  color: green;
+}
+
+#email:invalid + .error-message::after {
+  content: "Invalid email address!";
+  color: red;
+}
+
+#submit {
+  margin-right: 1rem;
+}
+
+#reset {
+  margin-left: 1rem;
+}
+
+#submit:disabled {
+  background-color: gray;
+}
+
+#submit:enabled {
+  background-color: green;
+}
+
+#submit:enabled:hover {
+  background-color: darkgreen;
+}

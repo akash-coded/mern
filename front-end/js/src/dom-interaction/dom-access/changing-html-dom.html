@@ -2,27 +2,50 @@
 <html lang="en">
   <head>
     <title>JS DOM Interaction</title>
+
+    <style>
+      .changed {
+        color: red;
+      }
+
+      .delayed {
+        color: green;
+      }
+    </style>
   </head>
   <body>
-    <p id="paragraph1">First paragraph inside the body</p>
-    <p id="paragraph2">Second paragraph inside the body</p>
+    <p id="paragraph1">This is the first paragraph inside the body</p>
+
+    <p id="paragraph2" class="changed">
+      This is the second paragraph inside the body
+    </p>
+
     <div id="div1">
-      <p id="innerParagraph1">First paragraph inside the div</p>
-      <p id="innerParagraph2"></p>
+      <p id="innerParagraph1">First paragraph inside div1</p>
+      <p id="innerParagraph2" class="changed"></p>
     </div>
 
-    <button onClick="showAlert()">Show Alert</button>
+    <div id="div2" name="div2" class="changed"></div>
+
+    <p id="paragraph3">This is the original content of paragraph3</p>
 
     <script>
-      let paragraph2Text = document.getElementById("paragraph2").innerText;
-      console.log("Contents of Paragraph-2: " + paragraph2Text);
+      document.getElementById("paragraph2").innerText =
+        "This is the changed paragraph";
 
-      document.getElementById("innerParagraph2").innerText =
-        "Second paragraph inside the div";
+      document.getElementsByClassName("changed")[1].innerText =
+        "Second paragraph inside div1";
 
-      function showAlert() {
-        alert("The button has been clicked");
-      }
+      document.getElementsByName("div2")[0].innerText = "This is div2";
+
+      setTimeout(() => {
+        let paragraph3 = document.getElementById("paragraph3");
+
+        paragraph3.innerText = "This is the modified content of paragraph3";
+
+        // paragraph3.className = "delayed";
+        paragraph3.classList.add("delayed");
+      }, 3000);
     </script>
   </body>
 </html>

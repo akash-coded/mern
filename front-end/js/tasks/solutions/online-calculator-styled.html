@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Event</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous"
+  />
+  <style>
+    .heading {
+      text-align: center;
+      height: 60px;
+      background: cornflowerblue;
+      border: 1px solid black;
+      color: aliceblue;
+      font-weight: bold;
+      line-height: 60px;
+    }
+
+    .form-content {
+      padding: 5%;
+      border: 1px solid black;
+      margin-bottom: 2%;
+    }
+
+    .btnSubmit {
+      border: none;
+      padding: 1%;
+      width: 20%;
+      cursor: pointer;
+      background: cornflowerblue;
+      color: aliceblue;
+    }
+  </style>
+
+  <body>
+    <div class="container mt-5 pt-5">
+      <div class="form">
+        <div class="row">
+          <div class="col-md-6 offset-3">
+            <div class="heading h3">
+              <p>Calculator</p>
+            </div>
+            <div class="form-content">
+              <form action="#" onSubmit="event.preventDefault(); calculate();">
+                <div class="form-group text-center">
+                  <label class="h5" for="num1">Number-1 : </label>
+                  <input type="number" id="num1" name="num1" />
+                </div>
+                <div class="form-group text-center mt-3">
+                  <label class="h5" for="num2">Number-2 : </label>
+                  <input type="number" id="num2" name="num2" />
+                </div>
+                <div class="form-group text-center mt-3">
+                  <label for="choice" class="h5">Operation : </label>
+                  <select id="choice">
+                    <option selected>...</option>
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                    <option>%</option>
+                  </select>
+                </div>
+                <div class="form-group mt-3">
+                  <button type="submit" class="btn btn-primary btn-block round">
+                    Calculate
+                  </button>
+                  <h3 id="result" class="mt-3 text-center"></h3>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function calculate() {
+        event.preventDefault();
+        event.stopPropagation();
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let op = document.getElementById("choice").value;
+        let choice = null;
+        switch (op) {
+          case "+":
+            let add = (function (x, y) {
+              return x + y;
+            })(num1, num2);
+            document.getElementById("result").innerText =
+              num1 + " + " + num2 + " = " + add;
+            break;
+          case "-":
+            let sub = (function (x, y) {
+              return x - y;
+            })(num1, num2);
+            document.getElementById("result").innerText =
+              num1 + " - " + num2 + " = " + sub;
+            break;
+          case "*":
+            let mul = (function (x, y) {
+              return x * y;
+            })(num1, num2);
+            document.getElementById("result").innerText =
+              num1 + " * " + num2 + " = " + mul;
+            break;
+          case "/":
+            let div = (function (x, y) {
+              return x / y;
+            })(num1, num2);
+            document.getElementById("result").innerText =
+              num1 + " / " + num2 + " = " + div;
+            break;
+          case "%":
+            let mod = (function (x, y) {
+              return x % y;
+            })(num1, num2);
+            document.getElementById("result").innerText =
+              num1 + " % " + num2 + " = " + mod;
+            break;
+        }
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

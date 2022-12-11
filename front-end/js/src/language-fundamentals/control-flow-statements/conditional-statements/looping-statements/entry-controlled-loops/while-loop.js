@@ -1,4 +1,4 @@
-let i = 1; // initialization
+let i = 11; // initialization
 
 // condition-checking
 while (i <= 10) {

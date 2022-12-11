@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      .form-control {
+        width: 100%;
+        height: 2.25rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The HTML for the login form -->
+    <form id="loginForm" novalidate>
+      <h1>Login</h1>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>

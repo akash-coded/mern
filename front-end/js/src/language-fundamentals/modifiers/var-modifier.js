@@ -12,6 +12,7 @@ function outer() {
       console.log(num3); // local to inner() function
     }
     console.log(num3);
+    var num3 = 50;
   }
 
   inner();

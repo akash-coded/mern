@@ -5,7 +5,7 @@ function outer() {
   function inner() {
     let num2 = 20; // local to inner() function
     console.log(num2);
-    // console.log(num3); // illegal access because let variables are not hoisted
+    // console.log(num3); // Temporal Dead Zone: Gives reference error
     if (true) {
       let num3 = 30; // local to inner() function
       console.log(num3); // local to inner() function

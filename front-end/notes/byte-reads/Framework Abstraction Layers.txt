@@ -1,0 +1,58 @@
+FRONTEND:
+- HTML
+  CSS
+  PROGRAMMING LANGUAGE: JavaScript -> TypeScript :- Base Level
+
+- LIBRARY: jQuery -> alternate syntax :- 1st Level of Abstraction
+
+	document.getElementById("input1").innerText = "blah blah";
+	$(#input1).text = "Blah blah";
+- RUNTIME ENVIRONMENT: Node.js :- 1st Level of Abstraction
+
+- FRONT-END FRAMEWORK: Angular/React/Vue.js/Svelte :- 2nd Level of Abstraction
+
+- FRAMEWORK OF FRAMEWORK - They sit on top of a framework - Next.js, Quik.js :- 3rd Level of Abstraction
+
+------------------------------------------------------------------------------------------------------------------------------------
+BACKEND - JAVA:
+PROGRAMMING LANGUAGE: Core Java :- Base Level
+
+- JAVA EE: Advanced Java :- 1st Level of Abstraction
+
+- FRAMEMWORK: Spring :- 2nd Level of Abstraction
+
+- FRAMEWORK OF FRAMEWORK: Spring Boot :- 3rd Level of Abstraction
+
+BACKEND - JAVASCRIPT:
+PROGRAMMING LANGUAGE: Server-side JavaScript :- Base Level
+
+- NODE.JS: Runtime Environment :- 1st Level of Abstraction
+
+- FRAMEWORK: Express.js :- 2nd Level of Abstraction
+
+- FRAMEWORK OF FRAMEWORK: NestJs :- 3rd Level of Abstraction
+------------------------------------------------------------------------------------------------------------------------------------
+DATABASE - RELATIONAL:
+PROGRAMMING LANGUAGE: Java
+DATABASE: MySQL/Oracle DB/PostgreSQL/SQL Server
+QUERY LANGUAGE: SQL
+
+- JDBC: DB Interface :- 1st Level of Abstraction
+
+- Spring JDBC :- 2nd Level of Abstraction
+- Doctrine: DQL :- 2nd Level of Abstraction
+ 
+- JPA: Persistence Layer :- 3rd Level of Abstraction
+
+- ORM Framework: Hibernate :- 4th Level of Abstraction
+
+- Spring Data JPA :- 5th Level of Abstraction
+
+DATABASE - NoSQL:
+PROGRAMMING LANGUAGE: JavaScript
+DATABASE: MongoDB
+QUERY LANGUAGE: Document Query Language
+
+- Mongo Driver: DB Interface :- 1st Level of Abstraction
+
+- ODM Framework: Mongoose :- 2nd Level of Abstraction

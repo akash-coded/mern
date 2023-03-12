@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      .text-red {
+        color: red;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forms</title>
-  <style>
-    .text-red {
-      color: red;
-    }
-  </style>
-</head>
+  <body>
+    <form action="login-backend" method="GET">
+      <div id="firstNameField" name="nameField">
+        <label for="fname">First name:<span class="text-red">*</span> </label
+        ><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          autocomplete="off"
+          required
+        /><br />
+      </div>
 
-<body>
-  <form action="login-backend" method="GET">
-    <div id="firstNameField" name="nameField">
-      <label for="fname">First name:<span class="text-red">*</span> </label><br />
-      <input type="text" id="fname" name="fname" autocomplete="off" required /><br />
-    </div>
+      <div id="lastNameField" name="nameField">
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          autofocus="autofocus"
+          placeholder="optional"
+        /><br />
+      </div>
 
-    <div id="lastNameField" name="nameField">
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" autofocus="autofocus" placeholder="optional" /><br />
-    </div>
+      <div id="emailField" name="emailField">
+        <label for="email">Email:*</label><br />
+        <input type="email" id="email" name="email" required /><br />
+      </div>
 
-    <div id="emailField" name="emailField">
-      <label for="email">Email:*</label><br />
-      <input type="email" id="email" name="email" required /><br />
-    </div>
+      <div id="passwordField" name="passwordField">
+        <label for="email">Password:*</label><br />
+        <input type="password" id="password" name="password" required /><br />
+      </div>
 
-    <div id="passwordField" name="passwordField">
-      <label for="email">Password:*</label><br />
-      <input type="password" id="password" name="password" required /><br />
-    </div>
+      <div id="dobField" name="dobField">
+        <label for="dob">DOB:</label><br />
+        <input type="date" id="dob" name="dob" /><br />
+      </div>
 
-    <div id="dobField" name="dobField">
-      <label for="dob">DOB:</label><br />
-      <input type="date" id="dob" name="dob" /><br />
-    </div>
+      <div id="ageField" name="ageField">
+        <label for="age">Age:</label><br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="150"
+          value="0"
+        /><br />
+      </div>
 
-    <div id="ageField" name="ageField">
-      <label for="age">Age:</label><br />
-      <input type="number" id="age" name="age" min="0" max="150" value="0" /><br />
-    </div>
-
-    <fieldset name="addressFeild" id="addressField">
-      <legend>Address</legend>
-      <label>
-        Street:
-        <input type="text" name="street" id="street" /> </label><br />
-      <label>
-        City:
-        <input type="text" name="city" id="city" /> </label><br />
-      <label>
-        State:
-        <input type="text" name="state" id="state" /> </label><br />
-      <label for="pincode">Pincode:</label>
-      <input type="number" id="pincode" name="pincode" min="100000" max="999999" /><br />
-    </fieldset>
-
-    <div id="genderField" name="genderField">
-      <fieldset>
-        <legend>Gender</legend>
-        <input type="radio" name="gender" id="male" value="male" />
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female" value="female" />
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="other" value="other" />
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="undisclosed" value="undisclosed" />
-        <label for="undisclosed">Rather not say</label>
+      <fieldset name="addressFeild" id="addressField">
+        <legend>Address</legend>
+        <label>
+          Street:
+          <input type="text" name="street" id="street" /> </label
+        ><br />
+        <label>
+          City:
+          <input type="text" name="city" id="city" /> </label
+        ><br />
+        <label>
+          State:
+          <input type="text" name="state" id="state" /> </label
+        ><br />
+        <label for="pincode">Pincode:</label>
+        <input
+          type="number"
+          id="pincode"
+          name="pincode"
+          min="100000"
+          max="999999"
+        /><br />
       </fieldset>
-    </div>
 
-    <div id="optionsField" name="optionsField">
-      <fieldset>
-        <legend>Employment status</legend>
-        <input type="checkbox" name="student" id="student" />
-        <label for="student">Student</label>
-        <input type="checkbox" name="unemployed" id="unemployed" />
-        <label for="unemployed">Unemployed</label>
-        <input type="checkbox" name="part-time" id="part-time" />
-        <label for="part-time">Part-time</label>
-        <input type="checkbox" name="full-time" id="full-time" />
-        <label for="full-time">Full-time</label>
-      </fieldset>
-    </div>
+      <div id="genderField" name="genderField">
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+          <input
+            type="radio"
+            name="gender"
+            id="undisclosed"
+            value="undisclosed"
+          />
+          <label for="undisclosed">Rather not say</label>
+        </fieldset>
+      </div>
 
-    <div id="countryField" name="countryField">
-      <label for="country">Country:</label><br />
-      <select name="country" id="country">
-        <option value="null"></option>
-        <option value="australia">Australia</option>
-        <option value="india">India</option>
-        <option value="england">England</option>
-        <option value="south africa">South Africa</option>
-      </select>
-    </div>
+      <div id="optionsField" name="optionsField">
+        <fieldset>
+          <legend>Employment status</legend>
+          <input type="checkbox" name="student" id="student" />
+          <label for="student">Student</label>
+          <input type="checkbox" name="unemployed" id="unemployed" />
+          <label for="unemployed">Unemployed</label>
+          <input type="checkbox" name="part-time" id="part-time" />
+          <label for="part-time">Part-time</label>
+          <input type="checkbox" name="full-time" id="full-time" />
+          <label for="full-time">Full-time</label>
+        </fieldset>
+      </div>
 
-    <div id="bioField" name="bioField">
-      <label for="bio">Bio:</label><br />
-      <textarea name="bio" id="bio" cols="30" rows="5"> </textarea>
-    </div>
+      <div id="countryField" name="countryField">
+        <label for="country">Country:</label><br />
+        <select name="country" id="country">
+          <option value="null"></option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+          <option value="england">England</option>
+          <option value="south africa">South Africa</option>
+        </select>
+      </div>
 
-    <div id="helplineDetails" name="helplineDetails">
-      <label for="helplineNumber">Helpline:</label><br />
-      <input type="text" id="helplineNumber" name="helplineNumber" value="1234567890" readonly /><br />
-    </div>
+      <div id="bioField" name="bioField">
+        <label for="bio">Bio:</label><br />
+        <textarea name="bio" id="bio" cols="30" rows="5"> </textarea>
+      </div>
 
-    <div id="formButtons">
-      <input type="submit" value="Submit" />
-      <input type="reset" value="Clear" />
-    </div>
-  </form>
-</body>
+      <div id="helplineDetails" name="helplineDetails">
+        <label for="helplineNumber">Helpline:</label><br />
+        <input
+          type="text"
+          id="helplineNumber"
+          name="helplineNumber"
+          value="1234567890"
+          readonly
+        /><br />
+      </div>
 
+      <div id="formButtons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </div>
+    </form>
+  </body>
 </html>

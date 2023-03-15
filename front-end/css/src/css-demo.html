@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Demo</title>
     <link rel="stylesheet" href="css-demo.css" />
+    <link rel="stylesheet" href="css-demo-extra.css" />
     <style>
       p {
         color: red;
       }
 
       #paragraph2 {
-        color: yellow !important;
+        color: yellow;
       }
 
       /* Defining a CSS class */
       .custom-paragraph {
         color: purple !important;
+        font-weight: bold;
       }
 
       .large-font {
@@ -27,6 +29,10 @@
       p:hover {
         color: black !important;
       }
+
+      div .child-content {
+        color: aqua;
+      }
     </style>
   </head>
   <body>
@@ -34,6 +40,9 @@
     <p id="paragraph2">Second paragraph</p>
     <!-- Using the custom CSS class -->
     <p id="paragraph3" class="custom-paragraph large-font">Third paragraph</p>
-    <p style="color: green">Fourth</p>
+    <div class="large-font" style="color: green">
+      Fourth paragraph
+      <div class="child-content">Child content</div>
+    </div>
   </body>
 </html>

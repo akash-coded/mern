@@ -7,6 +7,7 @@
     <title>CSS Demo</title>
     <link rel="stylesheet" href="css-demo.css" />
     <link rel="stylesheet" href="css-demo-extra.css" />
+    <!-- Internal CSS -->
     <style>
       p {
         color: red;
@@ -30,6 +31,10 @@
         color: black !important;
       }
 
+      #fourth-paragraph {
+        color: pink;
+      }
+
       div .child-content {
         color: aqua;
       }
@@ -40,7 +45,7 @@
     <p id="paragraph2">Second paragraph</p>
     <!-- Using the custom CSS class -->
     <p id="paragraph3" class="custom-paragraph large-font">Third paragraph</p>
-    <div class="large-font" style="color: green">
+    <div id="fourth-paragraph" class="large-font" style="color: green">
       Fourth paragraph
       <div class="child-content">Child content</div>
     </div>

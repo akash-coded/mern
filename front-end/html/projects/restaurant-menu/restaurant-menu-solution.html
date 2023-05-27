@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Menu</title>
+    <style>
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .menu-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .menu-item img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+      }
+
+      .menu-item h3,
+      .menu-item p.price {
+        margin: 0;
+      }
+
+      .price {
+        font-weight: bold;
+        margin-left: auto;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Restaurant</h1>
+      <nav>
+        <ul>
+          <li><a href="#starters">Starters</a></li>
+          <li><a href="#mains">Mains</a></li>
+          <li><a href="#desserts">Desserts</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="starters">
+        <h2>Starters</h2>
+        <ul>
+          <li class="menu-item">
+            <img src="img/bruschetta.jpg" />
+            <h3>Bruschetta</h3>
+            <p>
+              A classic Italian starter with toasted bread, fresh tomatoes,
+              garlic, and basil.
+            </p>
+            <p class="price">$6.99</p>
+          </li>
+          <li class="menu-item">
+            <img src="img/calzone.jpg" />
+            <h3>Calzone</h3>
+            <p>
+              A folded pizza filled with ham, mushrooms, mozzarella, and tomato
+              sauce.
+            </p>
+            <p class="price">$9.99</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="mains">
+        <h2>Mains</h2>
+        <ul>
+          <li class="menu-item">
+            <img src="img/pasta.jpg" />
+            <h3>Pasta Bolognese</h3>
+            <p>
+              Spaghetti with a rich meaty tomato sauce, parmesan, and basil.
+            </p>
+            <p class="price">$12.99</p>
+          </li>
+          <li class="menu-item">
+            <img src="img/steak.jpg" />
+            <h3>Grilled Steak</h3>
+            <p>
+              A juicy sirloin steak cooked to your liking, served with fries and
+              a green salad.
+            </p>
+            <p class="price">$16.99</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="desserts">
+        <h2>Desserts</h2>
+        <ul>
+          <li class="menu-item">
+            <img src="img/tiramisu.jpg" />
+            <h3>Tiramisu</h3>
+            <p>
+              A classic Italian dessert made with ladyfingers, espresso,
+              mascarpone cheese, and cocoa powder.
+            </p>
+            <p class="price">$7.99</p>
+          </li>
+          <li class="menu-item">
+            <img src="img/cheesecake.jpg" />
+            <h3>New York Cheesecake</h3>
+            <p>
+              A creamy, rich cheesecake with a graham cracker crust, topped with
+              strawberry compote.
+            </p>
+            <p class="price">$8.99</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="drinks">
+        <h2>Drinks</h2>
+        <ul>
+          <li class="menu-item">
+            <img src="img/iced-tea.jpg" />
+            <h3>Iced Tea</h3>
+            <p>A refreshing blend of tea and lemon, served over ice.</p>
+            <p class="price">$2.99</p>
+          </li>
+          <li class="menu-item">
+            <img src="img/soda.jpg" />
+            <h3>Soda</h3>
+            <p>Your choice of Coke, Pepsi, or Sprite.</p>
+            <p class="price">$1.99</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; My Restaurant</p>
+    </footer>
+  </body>
+</html>

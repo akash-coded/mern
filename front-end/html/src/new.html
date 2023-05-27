@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #444;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      /* Form styles */
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 5px;
+        animation: animateForm 0.5s;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        transition: border-color 0.2s;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        border-color: #4caf50;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.2s;
+        animation: animateButton 0.5s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .g-recaptcha {
+        margin-bottom: 20px;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        form {
+          max-width: 100%;
+          padding: 10px;
+        }
+      }
+
+      /* Animations */
+      @keyframes animateForm {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes animateButton {
+        from {
+          transform: scale(0.95);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+      /><br /><br />
+
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>

@@ -6,7 +6,7 @@ console.log(5 - 3); // subtraction
 console.log(2 * 3); // multiplication
 console.log(5 / 2); // division
 console.log(5 % 2); // remainder or modulus
-console.log(5 ** 2); // exponentiation
+console.log(5 ** 3); // exponentiation
 console.log(16 ** (1 / 2));
 console.log();
 

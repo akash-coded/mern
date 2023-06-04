@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3100;
 
+app.use(express.json());
+
 // In-memory data storage for books
 const books = [
     { id: 1, title: 'The Alchemist', author: 'Paulo Coelho' },
@@ -60,7 +62,7 @@ app.post('/api/books', (req, res) => {
 
 // Endpoint to get book details by ID
 app.get('/api/books/details', (req, res) => {
-    const { id } = req.query.id;
+    const id = +req.query.id;
 
     if (!id) {
         return res.status(400).json({ error: 'ID is required' });
@@ -79,14 +81,14 @@ app.get('/api/books/details', (req, res) => {
 
 // Endpoint to update book details by ID
 app.put('/api/books/update', (req, res) => {
-    const { id } = req.query.id;
+    const { id } = req.query;
 
     if (!id) {
         return res.status(400).json({ error: 'ID is required' });
     }
 
     const book = books.find(book => {
-        return book.id === id;
+        return book.id == id;
     });
 
     const { title, author } = req.body;
@@ -112,7 +114,7 @@ app.put('/api/books/update', (req, res) => {
 
 // Endpoint to delete a book by ID
 app.delete('/api/books/delete', (req, res) => {
-    const { id } = req.query.id;
+    const id = req.query.id * 1;
 
     if (!id) {
         return res.status(400).json({ error: 'ID is required' });
@@ -134,7 +136,7 @@ app.delete('/api/books/delete', (req, res) => {
 
 // Endpoint to search for books based on a keyword
 app.get('/api/books/search', (req, res) => {
-    const { keyword } = req.query;
+    const keyword = req.query.keyword;
 
     if (!keyword) {
         return res.status(400).json({ error: 'Keyword is required' });

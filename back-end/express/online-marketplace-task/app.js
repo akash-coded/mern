@@ -145,7 +145,7 @@ app.listen(3002, () => {
         id: uuidv4(),
         title: 'Product 1',
         description: 'Product 1 description',
-        price: 100
+        price: 100,
     });
 
     // Create default orders
@@ -153,12 +153,12 @@ app.listen(3002, () => {
         id: uuidv4(),
         userId: users[0].id,
         productId: products[0].id,
-        quantity: 1
+        quantity: 1,
     });
     orders.push({
         id: uuidv4(),
         userId: users[0].id,
         productId: products[0].id,
-        quantity: 2
+        quantity: 2,
     });
 });

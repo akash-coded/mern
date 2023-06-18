@@ -1,0 +1,40 @@
+C - Create
+R - Read
+U - Update
+D - Delete
+DML Operations - Take place on the data
+
+Context:
+- cart is just an attribute for every user entry
+- Orders is a separate table used for all the Users
+
+E-commerce App
+
+1. Sign Up - Create - Inserting new user data
+2. Sign In - Read - Retrieving user data to check for credentials
+3. Sign In (You have forgot password) - Update, Read - Reset the password and sign in with the updated password
+3. View Products - Read - Retrieving all Products
+4. Search Products - Read - Retrieving filtered Products
+5. View Product Description - Read - Retrieving Product description
+6. View Profile - Read - Retrieving your data
+7. Change password - Update - Updating a part of your data
+8. Add a new payment method - Create - Inserting payment method data
+9. Updating the payment method - Update - Changing the payment method data
+10. Add to cart - Update - Updating the cart data
+11. View cart - Read - Retrieving the cart data
+12. Remove a product from the cart - Update - Updating the cart data
+13. Place Order - Update, Read, Create - Updating the cart data. Then you retrieve the default address
+and payment method data. Then you insert the new order data.
+14. View Orders - Read - Retrieving the data of all orders placed by the user
+15. View Order Details - Read - Retrieving the data of a particular order
+16. Cancel Order - Update - Update the status data of the order to cancelled
+17. Return Order - Update - Update the status data of the order to returned
+18. Sign Out - No CRUD operation
+
+Zoom
+
+1. Creating/Scheduling meeting - Create - Inserting new meeting document
+2. Sending a message - Update - Adding a new message object to the chats array of the
+meeting document
+3. View meetings - Read - Retrieving all the meeting documents
+4. Remove a scheduled meeting - Delete - Removing a scheduled meeting document

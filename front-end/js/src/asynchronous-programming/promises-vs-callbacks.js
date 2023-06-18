@@ -67,6 +67,7 @@ console.log();
 let success = true;
 
 function getUsers2() {
+
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (success) {

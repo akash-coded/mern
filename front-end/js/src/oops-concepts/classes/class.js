@@ -73,4 +73,6 @@ class User {
 }
 let user = new User("John");
 console.log(user.name);
+user.name2 = "Blah";
+console.log(user.name2);
 user.sayHi();

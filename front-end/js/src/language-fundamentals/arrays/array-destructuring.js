@@ -1,4 +1,4 @@
-const arr = [1, 2, 3];
+const arr = [10, 20, 30];
 
 // const first = arr[0];
 // const second = arr[1];

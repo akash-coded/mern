@@ -33,3 +33,21 @@ let additiveResult = (function (a, b) {
 })(7, 3);
 
 console.log(additiveResult);
+
+// Use-cases: Controlling scoping and Creating private variables
+
+// IFEs can be used to create private variables that are only accessible within the function scope. This can be useful for encapsulation, where you want to limit the scope of a variable to a specific function.
+var counter = (function () {
+  var privateCounter = 0;
+  return {
+    increment: function () {
+      privateCounter++;
+    },
+    decrement: function () {
+      privateCounter--;
+    },
+    value: function () {
+      return privateCounter;
+    }
+  };
+})();

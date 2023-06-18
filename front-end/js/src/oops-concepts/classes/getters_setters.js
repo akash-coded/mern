@@ -27,3 +27,4 @@ console.log(user.name);
 
 user.name = "Alex";
 console.log(user.name);
+

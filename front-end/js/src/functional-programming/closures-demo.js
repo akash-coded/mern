@@ -1,6 +1,7 @@
 function multiplicationClosure(a) {
+  let c = 10;
   return function (b) {
-    console.log("Product = " + a * b);
+    console.log("Product = " + a * b * c);
   };
 }
 

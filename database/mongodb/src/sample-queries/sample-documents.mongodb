@@ -4,8 +4,11 @@ db.createUser({
     roles: ["readWrite", "dbAdmin"]
 })
 
+// use my_db;
+// use some_other_db;
+
 db.createCollection('user_records');
-show collections
+// show collections
 
 db.user_records.insert({
     firstName: "John",
@@ -28,7 +31,7 @@ db.user_records.insert({
             name: "Peter",
             relationship: "brother"
         }
-    ]
+    ],
 });
 
 db.user_records.find();
@@ -38,20 +41,20 @@ db.user_records.insert({
     lastname: "Sen",
     dob: "25/05/2022",
     skills: ["html", "css"],
-  address:{
-     street: "6th main st",
-     city: "Boston"
-  },
-  emergencyContacts: [
-  { 
-      name: "abc",
-      contact: "4243333322"
-  },
-  {
-      name: "xyz",
-      contact: "4243333322"
-  }
-  ]     
+    address: {
+        street: "6th main st",
+        city: "Boston"
+    },
+    emergencyContacts: [
+        {
+            name: "abc",
+            contact: "4243333322"
+        },
+        {
+            name: "xyz",
+            contact: "4243333322"
+        }
+    ]
 });
 
 db.user_records.insert({
@@ -69,11 +72,11 @@ db.createCollection("students", {
         bsonType: "object",
         required: ["name", "year", "address"],
         properties: {
-            name : {
+            name: {
                 bsonType: "string",
                 description: "must be a string and is required"
             },
-            
+
         }
     }
 })

@@ -71,3 +71,15 @@ let multiply = getMultiplier(); // function expression
 console.log(multiply);
 let product = multiply(3, 4);
 console.log(product);
+
+function getMultiplierClosure() {
+  return function (a) {
+    return function (b) {
+      return a * b;
+    };
+  };
+}
+
+let multiplyClosure = getMultiplierClosure();
+let curriedProduct = multiplyClosure(3)(4);
+console.log(curriedProduct);

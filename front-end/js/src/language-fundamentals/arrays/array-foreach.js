@@ -4,7 +4,7 @@
 
 const array1 = ["a", "b", "c"];
 
-array1.forEach((element) => console.log(element));
+array1.forEach((index, element) => console.log(index, element));
 
 /**
  * Example-2

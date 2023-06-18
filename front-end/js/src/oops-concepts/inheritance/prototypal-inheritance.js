@@ -14,11 +14,11 @@ class Husky extends Dog {
   showInfo() {
     console.log(
       "color: " +
-        this._color +
-        " speed: " +
-        this._speed +
-        " owner: " +
-        this._owner
+      this._color +
+      " speed: " +
+      this._speed +
+      " owner: " +
+      this._owner
     );
   }
 }
@@ -32,4 +32,7 @@ let husky = {
 };
 
 husky.__proto__ = dog;
+console.log(husky.owner + " is an owner of " + husky.color + " Husky");
+
+dog.color = "black";
 console.log(husky.owner + " is an owner of " + husky.color + " Husky");

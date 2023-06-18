@@ -40,6 +40,7 @@ class CoffeeMachine {
 // create the coffee-machine
 let coffeeMachine = new CoffeeMachine(100);
 console.log(coffeeMachine);
+// console.log(coffeeMachine.#coffeeBeansQty);
 
 // add water
 coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10

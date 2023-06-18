@@ -1,3 +1,5 @@
+let key = "name";
+
 let user = { name: "John" };
 let admin = { name: "Alex" };
 

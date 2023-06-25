@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 function CounterWithNameAndSideEffect({ user }) {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    console.log(`Hi ${user}, you clicked ${count} times`);
-  }, [user, count]);
+  useEffect(
+    () => {
+      console.log(`Hi ${user}, you clicked ${count} times`);
+    }, [user, count]
+  );
 
   return (
     <>

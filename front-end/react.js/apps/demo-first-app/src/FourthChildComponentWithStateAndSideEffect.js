@@ -3,7 +3,7 @@ function FourthChildComponentWithStateAndSideEffect({ name, setName }) {
         <div>
             <h2>Fourth Child Component</h2>
             <p>State Variable Data from Parent: {name}</p>
-            <button onClick={() => setName("Akash Das")}>Change Name</button>
+            <button onClick={() => setName("Bikash Singh")}>Change Name</button>
             <button onClick={() => setName("Akash")}>Reset Name</button>
         </div>
     )

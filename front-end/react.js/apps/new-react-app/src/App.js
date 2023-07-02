@@ -6,6 +6,7 @@ import './App.css';
 import UserDetails from './UserDetails';
 import UserPortal from './UserPortal';
 import AdminPortal from './AdminPortal';
+import ApiUserPortal from './ApiUserPortal';
 
 function App() {
   const users = [
@@ -37,6 +38,9 @@ function App() {
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
+          |
+          <li><a href="/api/users">API Users</a></li>
+          |
           <li><a href="/admin">Admin</a></li>
           <li><a href="/users">Users</a></li>
           <li>
@@ -61,6 +65,9 @@ function App() {
               </header>
             </>
           } />
+
+          <Route exact path="/api/users" element={<ApiUserPortal />} />
+
           <Route exact path="/users/:id" element={<UserDetails users={users} />} />
           <Route exact path="/users" element={<UserPortal users={users} />} />
           <Route exact path="/admin" element={<AdminPortal />} />

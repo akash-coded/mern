@@ -3,10 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-import UserDetails from './UserDetails';
-import UserPortal from './UserPortal';
-import AdminPortal from './AdminPortal';
 import ApiUserPortal from './ApiUserPortal';
+import ApiUserDetails from './ApiUserDetails';
+import AdminPortal from './AdminPortal';
+import UserPortal from './UserPortal';
+import UserDetails from './UserDetails';
 
 function App() {
   const users = [
@@ -40,18 +41,13 @@ function App() {
           <li><a href="/">Home</a></li>
           |
           <li><a href="/api/users">API Users</a></li>
+          <li><a href="/api/users/1">API User 1</a></li>
+          <li><a href="/api/users/2">API User 2</a></li>
           |
           <li><a href="/admin">Admin</a></li>
           <li><a href="/users">Users</a></li>
-          <li>
-            <a href="/users/1">User 1</a>
-          </li>
-          <li>
-            <a href="/users/2">User 2</a>
-          </li>
-          <li>
-            <a href="/users/3">User 3</a>
-          </li>
+          <li><a href="/users/1">User 1</a></li>
+          <li><a href="/users/2">User 2</a></li>
         </ul>
       </nav>
 
@@ -67,6 +63,7 @@ function App() {
           } />
 
           <Route exact path="/api/users" element={<ApiUserPortal />} />
+          <Route exact path="/api/users/:id" element={<ApiUserDetails />} />
 
           <Route exact path="/users/:id" element={<UserDetails users={users} />} />
           <Route exact path="/users" element={<UserPortal users={users} />} />

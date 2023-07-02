@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 
 function ApiUserPortal() {
     // Fetch users data from reqres.in API
-    const url = "https://reqres.in/api/users?page=2";
+    const baseUrl = "https://reqres.in/api/users?page=";
+
+    const [url, setUrl] = useState(baseUrl + "1");
     const [users, setUsers] = useState([]);
 
-    const fetchInfo = async () => {
+    const fetchInfo = async (url) => {
         return await axios.get(url).then((response) => {
             setUsers(response.data.data);
         }
@@ -17,13 +19,19 @@ function ApiUserPortal() {
     }
 
     useEffect(() => {
-        fetchInfo();
-    }, []);
+        fetchInfo(url);
+    }, [url]);
 
     return (
         <div>
             <h1>Welcome to the reqres.in User Portal</h1>
             <p>Reqres users can see this page</p>
+            <hr />
+            <h2>Users</h2>
+            <div className="Center">
+                <button onClick={() => setUrl(baseUrl + "1")}>1</button>
+                <button onClick={() => setUrl(baseUrl + "2")}>2</button>
+            </div>
             <table border="1" className="Center">
                 <thead>
                     <tr>

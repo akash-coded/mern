@@ -8,6 +8,7 @@ import ApiUserDetails from './ApiUserDetails';
 import AdminPortal from './AdminPortal';
 import UserPortal from './UserPortal';
 import UserDetails from './UserDetails';
+import CounterWithSideEffect from './CounterWithSideEffect';
 
 function App() {
   const users = [
@@ -40,6 +41,8 @@ function App() {
         <ul>
           <li><a href="/">Home</a></li>
           |
+          <li><a href="/counter">Counter</a></li>
+          |
           <li><a href="/api/users">API Users</a></li>
           <li><a href="/api/users/1">API User 1</a></li>
           <li><a href="/api/users/2">API User 2</a></li>
@@ -61,6 +64,8 @@ function App() {
               </header>
             </>
           } />
+
+          <Route exact path="/counter" element={<CounterWithSideEffect />} />
 
           <Route exact path="/api/users" element={<ApiUserPortal />} />
           <Route exact path="/api/users/:id" element={<ApiUserDetails />} />

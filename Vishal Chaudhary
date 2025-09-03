@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Kumar Chaudhary — Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 30px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #f59e0b;
+      box-shadow: 0 0 20px #f59e0b;
+      animation: zoomIn 2s ease-in-out;
+    }
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 28px;
+      color: #fbbf24;
+      animation: fadeInUp 2s ease-in-out;
+    }
+    p {
+      margin: 5px 0;
+      animation: fadeInUp 3s ease-in-out;
+    }
+    .card {
+      background: #0b1220;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      animation: fadeIn 3s ease-in-out;
+    }
+    .contact a {
+      display: block;
+      margin: 10px 0;
+      color: #f59e0b;
+      text-decoration: none;
+      font-weight: bold;
+      animation: fadeInUp 3.5s ease-in-out;
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 14px;
+      opacity: 0.8;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(0.5); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <!-- Aapka photo -->
+    <img src="profile.jpg" alt="Profile Photo">
+    <h1>Vishal Kumar Chaudhary</h1>
+    <p>Welcome to my personal website</p>
+  </header>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>Hi, I am Vishal. Ye mera personal website hai jahan aapko mere baare me basic information milegi.</p>
+  </div>
+
+  <div class="card contact">
+    <h2>Contact Me</h2>
+    <a href="tel:6200896745">📞 6200896745</a>
+    <a href="mailto:vishalkumar473673@gmail.com">✉️ vishalkumar473673@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2025 Vishal Kumar Chaudhary | All Rights Reserved
+  </footer>
+</body>
+</html>
